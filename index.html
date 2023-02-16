@@ -4,8 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/parallax.css">
-    
+    <link rel="stylesheet" href="styles/parallax.css">  
     <title>Wireframe 1</title>
 </head>
 <body>
@@ -33,24 +32,51 @@
     <div class="page">
         <div class="intro-header">
             <div class="bg-image parallax-bg">
-                <video width="2000" height="auto" autoplay muted loop>
+                <div class="size-adjust">
+                <video id="background-video" width="100%" height="auto" autoplay muted loop>
                 <source src="videos/cloud-time-lapse-canyons-utah-landscape-2022-02-08-22-44-12-utc.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
                 <div class="overlay">
-                    <h1 style="position: absolute;">Welcome to Utah</h1>
-                    <h2><i class="fa-solid fa-arrow-down"></i></h2>
+                <h1 style="position: absolute;" id="welcome">Welcome to Utah</h1>
+                <h2>Scroll down to see more<span>&#8681;</span>
+                </h2>
+                </a>
                 </div>
             </div>
         </div>
+    </div>
         
         </div>
+    <div id="down">
         <div class="content">
             <div class="row">
-                
+                <!--From Codepen-->
+                <div class="carousel">
+                    <input id="image1" type="radio" name="image-selector" checked="checked" />
+                    <label for="image4">View image 4</label>
+                    <img src="images/54925-sun-rising-over-mesa-arch-canyonlands-utah-2022-03-04-02-38-40-utc.jpg" />
+                  
+                    <input id="image2" type="radio" name="image-selector" />
+                    <label for="image1">View image 1</label>
+                    <img src="images/colorado-river-and-red-sandstone-cliffs-utah-usa-2021-09-04-10-32-49-utc.jpg" />
+                  
+                    <input id="image3" type="radio" name="image-selector" />
+                    <label for="image2">View image 2</label>
+                    <img src="images/usa-utah-north-coyote-buttes-the-wave-2022-03-08-01-21-29-utc.jpg" />
+                  
+                    <input id="image4" type="radio" name="image-selector" />
+                    <label for="image3">View image 3</label>
+                    <img src="images/utah-wilderness-cottonwood-canyons-2021-09-01-11-17-00-utc.jpg" />
+                    
+                    <label for="image4">View image 4</label>
+                    <label for="image1">View image 1</label>
+                  </div>
+                   
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
