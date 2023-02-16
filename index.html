@@ -4,18 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/parallax.css">
-    
-    <title>Wireframe 1</title>
+    <link rel="stylesheet" href="styles/parallax.css">  
+    <title>Utah</title>
 </head>
 <body>
 <div class="container">
     <nav>
         <div class="nav_item">
+            <img src="media/utah_logo.svg">
+        </div>
+        <div class="nav_item">
             <a href="index.html">Home</a>
         </div>
         <div class="nav_item">
             <a href="index.html">National Parks</a>
+            <!--<div class="dropdown_content">
+                <a href="#">park1</a>
+                <a href="#">park1</a>
+                <a href="#">park1</a>
+                <a href="#">park1</a>
+                <a href="#">park1</a>
+            </div>-->
         </div>
         <div class="nav_item">
             <a href="index.html">Activities</a>
@@ -33,25 +42,61 @@
     </nav>
     <div class="page">
         <div class="intro-header">
-            <div class="vid_wraper">
-                <video width="2000" height="auto" autoplay muted loop>
+            <div class="bg-image parallax-bg">
+                <div class="size-adjust">
+                <video id="background-video" width="100%" height="auto" autoplay muted loop>
                 <source src="videos/cloud-time-lapse-canyons-utah-landscape-2022-02-08-22-44-12-utc.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
                 <div class="overlay">
-                    <h1 style="position: absolute;">Welcome to Utah</h1>
-                    <h2><i class="fa-solid fa-arrow-down"></i></h2>
+                <h1 style="position: absolute;" id="welcome">Welcome to Utah</h1>
+                <h2><span>&#8681;</span>
+                </h2>
+                </a>
                 </div>
             </div>
         </div>
+    </div>
         
         </div>
+    <div id="down">
         <div class="content">
             <div class="row">
+                <div class="filler-text">
+                    <h1>Information about Utah</h1>
+                </div>
+                <div class="filler-subtext">
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis adipisci repudiandae, ducimus aut nesciunt officiis rem dolorem, unde, suscipit consectetur in cumque illo! Animi cumque consectetur nostrum laboriosam, facilis, esse odio totam doloribus odit in quidem debitis. Impedit saepe numquam veritatis. Distinctio, velit quibusdam natus corporis tempora maxime quod, deleniti cumque odit aut laudantium.<br/><br/> Soluta perspiciatis unde nostrum corrupti tempore? Explicabo rerum modi nam cum quod non, provident maxime voluptatum obcaecati quibusdam porro hic labore eos nostrum libero, sunt eum cupiditate vero magnam temporibus. Corrupti deleniti impedit recusandae reiciendis perspiciatis placeat perferendis corporis ducimus libero, culpa hic voluptate quae doloremque laborum nemo ut provident.<br/><br/> Possimus hic fugit obcaecati aspernatur fuga cum atque! Debitis officia repudiandae assumenda recusandae quidem eligendi fuga, vel dolorem veniam. Expedita, earum doloremque! Asperiores, at! Ipsam at sint, commodi aut sed in neque nam necessitatibus quasi ipsum itaque soluta possimus, praesentium, accusamus natus? Placeat nisi expedita at dolore illum. Illum pariatur laboriosam alias unde eum quaerat sunt, culpa sit voluptas sed placeat, tempora sint, magnam quam. Est, expedita blanditiis cumque corrupti similique assumenda error eos tenetur atque optio nesciunt quaerat fugit reprehenderit laudantium, suscipit illum eligendi quo harum nostrum eveniet ut vitae, ratione iure. Incidunt alias, aspernatur iste odio natus porro soluta veniam nemo doloribus ex.<br><br> Ducimus voluptas id labore blanditiis, quas in ad voluptatem reprehenderit, rerum sint porro expedita dolorum totam nesciunt laudantium animi. Rerum veniam ipsa quae at id ab cupiditate odit magni enim laborum itaque voluptas, illo molestiae sapiente accusamus, numquam accusantium velit, eligendi nesciunt delectus. Error quis voluptatem quibusdam rem repellendus praesentium veritatis doloremque aliquid tenetur quaerat itaque eveniet, labore eligendi excepturi, reiciendis dignissimos, et nihil facere debitis eaque provident non commodi. Pariatur, molestias! Officia deserunt sequi autem nihil! Voluptatum modi sunt iusto repellat minima?<br><br> Fugiat totam consequatur eum officia, rerum veniam deleniti amet minus facilis soluta. Eaque debitis est ea inventore nobis ab impedit perferendis eos velit unde sed fuga deserunt, totam dolor repellat, a enim et sapiente iste id odio quis ullam molestias? Possimus tempore maiores deserunt voluptatum porro iusto architecto, itaque voluptatem cum reiciendis facere earum ducimus?<br/><br/> Autem fuga vel nam at, saepe culpa incidunt obcaecati eligendi perspiciatis beatae, nulla quidem! Nihil, vel iure amet vitae molestiae ratione dolorem voluptate delectus. In accusantium mollitia aut distinctio quod cum expedita tempora! Quia sit magni quo repellat, sapiente culpa id vel, autem ratione voluptates a! Aliquid quo odit quasi ipsum delectus similique quod totam voluptate pariatur quas autem accusamus facere ducimus consequuntur, nihil dolores perspiciatis fugiat tempore minima voluptatem quaerat vitae, aspernatur est eius.<br/><br/> Eaque expedita minus nam dolorum quam amet quasi delectus quas eligendi! Earum velit nihil provident numquam ipsum, eaque neque atque quae totam inventore dolorem eveniet soluta officiis minus necessitatibus adipisci. Itaque sed magnam eligendi, optio laborum laboriosam odio quas! Ad, dolorum explicabo numquam nulla, architecto doloribus quasi illo aliquam non, quia asperiores voluptates praesentium vel. Doloribus cumque itaque temporibus unde quo possimus nemo debitis dolor. Ducimus, maxime dolores porro eaque ut vitae necessitatibus molestias, deserunt, consequuntur modi eligendi.
+                </div>
+                <!--From Codepen-->
+                <div class="carousel">
+                    <input id="image1" type="radio" name="image-selector" checked="checked" />
+                    <label for="image4">View image 4</label>
+                    <img src="images/54925-sun-rising-over-mesa-arch-canyonlands-utah-2022-03-04-02-38-40-utc.jpg" />
+                  
+                    <input id="image2" type="radio" name="image-selector" />
+                    <label for="image1">View image 1</label>
+                    <img src="images/colorado-river-and-red-sandstone-cliffs-utah-usa-2021-09-04-10-32-49-utc.jpg" />
+                  
+                    <input id="image3" type="radio" name="image-selector" />
+                    <label for="image2">View image 2</label>
+                    <img src="images/usa-utah-north-coyote-buttes-the-wave-2022-03-08-01-21-29-utc.jpg" />
+                  
+                    <input id="image4" type="radio" name="image-selector" />
+                    <label for="image3">View image 3</label>
+                    <img src="images/utah-wilderness-cottonwood-canyons-2021-09-01-11-17-00-utc.jpg" />
+                    
+                    <label for="image4">View image 4</label>
+                    <label for="image1">View image 1</label>
+                  </div>
+                   
+                
                 
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
