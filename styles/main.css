@@ -8,4 +8,10 @@
     top:400;
     left:900;
     z-index:1;
+    text-align: center;
+}
+
+h2 {
+    position: absolute;
+    top: 400
 }
