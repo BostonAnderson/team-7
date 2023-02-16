@@ -33,7 +33,7 @@ nav {
 nav > .nav_item > a {
     text-decoration: none;
     color: white;
-    font-family: 'Leckerli One', cursive;
+    font-family: 'IBM Plex Serif', serif;
     opacity: 100%;
 }
 
@@ -47,23 +47,28 @@ nav > .nav_item {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 25px 0 25px;
+    padding: 0 5vh 0 5vh;
     background-color: rgba(0,0,0,0);
 }
 
 nav > .nav_item:hover {
     animation-name: nav_opacity;
     animation-duration: .5s;
-    animation-direction: forward;
+    animation-fill-mode: forwards;
 }
 
 nav > .nav_item:not(:hover) {
-    animation-name: nav_opacity;
+    animation-name: nav_opacity_off;
     animation-duration: .5s;
-    animation-direction: backwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes nav_opacity {
     from{background-color: rgba(0,0,0,0);}
     to{background-color: rgba(0,0,0,.5);}
+}
+
+@keyframes nav_opacity_off {
+    from{background-color: rgba(0,0,0,.5);}
+    to{background-color: rgba(0,0,0,0);}
 }
