@@ -22,7 +22,7 @@ nav {
     height: 10vh;
     background-color: rgba(0,0,0,.3);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     overflow: hidden;
     position: fixed;
@@ -35,6 +35,7 @@ nav > .nav_item > a {
     color: white;
     font-family: 'IBM Plex Serif', serif;
     opacity: 100%;
+    position: relative;
 }
 
 nav > .nav_item > img {
@@ -44,11 +45,14 @@ nav > .nav_item > img {
 nav > .nav_item {
     height: 10vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 5vh 0 5vh;
     background-color: rgba(0,0,0,0);
+    position: relative;
+    
 }
 
 nav > .nav_item:hover {
@@ -72,3 +76,23 @@ nav > .nav_item:not(:hover) {
     from{background-color: rgba(0,0,0,.5);}
     to{background-color: rgba(0,0,0,0);}
 }
+/*
+@keyframes nav_opacity {
+    from{background-color: rgba(0,0,0,0);}
+    to{background-color: rgba(0,0,0,.5);}
+}
+
+@keyframes nav_opacity_off {
+    from{background-color: rgba(0,0,0,.5);}
+    to{background-color: rgba(0,0,0,0);}
+}
+*/
+.dropdown_content {
+    display: none;
+    position: relative;
+}
+
+.dropbtn {
+    height: 10vh;
+    border: none;
+  }
