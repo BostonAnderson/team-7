@@ -40,6 +40,7 @@ nav > .nav_item > a {
 
 nav > img {
     height: 50px;
+    padding: 0 5vh 0 5vh;
 }
 
 nav > .nav_item {
