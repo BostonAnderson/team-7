@@ -1,19 +1,19 @@
 .container { position:relative; }
 .container video {
-    position:relative;
-    z-index:0;
+    position: relative;
+    z-index: 0;
 }
 .overlay {
-    position:absolute;
-    top:400;
-    left:900;
-    z-index:1;
+    position: absolute;
+    top: 400;
+    left: 900;
+    z-index: 1;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 h2 {
     position: absolute;
-    top: 400
+    top: 400;
 }
