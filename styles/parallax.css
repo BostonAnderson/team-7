@@ -14,7 +14,7 @@ h1, h2 {
 }
 
 .row {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ h1, h2 {
 }
 
 .content { 
-  height: 100vh;
+  height: 150vh;
   padding: 50px;
   background: #333;
   margin-top: 100vh;
