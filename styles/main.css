@@ -4,14 +4,17 @@
     z-index: 0;
 }
 .overlay {
-    position: absolute;
-    top: 400;
-    left: 900;
-    z-index: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
+    position: relative;
+    z-index: 1;  
+    width: 100%;
+    
+}
+
+.overlay-inside {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50%;
 }
 
 h2 {
@@ -290,9 +293,10 @@ nav {
 .dropdown:hover .dropbtn {background-color: rgba(0, 0, 0, 0.3)}
 
 .topz {
+  margin: 100vh;
   padding: 20px;
   font-size: 50px;
   background-color: red;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
