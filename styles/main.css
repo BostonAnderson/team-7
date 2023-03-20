@@ -288,3 +288,11 @@ nav {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: rgba(0, 0, 0, 0.3)}
+
+.topz {
+  padding: 20px;
+  font-size: 50px;
+  background-color: red;
+  position: relative;
+  z-index: 2;
+}
