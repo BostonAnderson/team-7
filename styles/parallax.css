@@ -13,15 +13,6 @@ h1, h2 {
   text-shadow: 0 2px rgba(0,0,0,.5);
 }
 
-h1 {
-  position:relative;
-  margin-top: -600px;
-}
-
-.span {
-  margin-top: -600px;
-}
-
 .row {
   max-width: 100%;
   margin: 0 auto;
@@ -39,10 +30,10 @@ h1 {
 }
 
 .content { 
-  height: 150vh;
+  height: 100vh;
   padding: 50px;
   background: #333;
-  margin-top: 1vh;
+  margin-top: 100vh;
 }
 
 .page > .intro-header > .vid_wrapper {

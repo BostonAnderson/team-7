@@ -7,14 +7,14 @@
     position: relative;
     z-index: 1;  
     width: 100%;
-    
+    height: 100vh;
 }
 
 .overlay-inside {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-top: 50%;
 }
 
 h2 {
@@ -56,8 +56,6 @@ h2 {
 span {
   content: "/21E9";
   font-size: 50px;
-  position: absolute;
-  margin-top: -550px;
 }
 
 .size-adjust {
@@ -203,7 +201,8 @@ h3 {
     text-transform:uppercase;
     font-size:14px;
   }
-  input, textarea{
+
+  input, textarea {
     display:block;
     width:100%;
     border:2px solid #2980B9;
@@ -211,7 +210,6 @@ h3 {
     font-size:18px;
     border-radius:5px;
   }
-  
 }
 
 #sendBtn{
@@ -223,7 +221,8 @@ h3 {
   width:auto;
   text-transform:uppercase;
   cursor:pointer;
-  transition:.3s background ease;
+  transition:.3s;
+  background ease;
   &:hover{
     background:#3498DB;
   }
@@ -293,18 +292,3 @@ nav {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: rgba(0, 0, 0, 0.3)}
-
-.topz {
-  margin: 100vh;
-  padding: 20px;
-  font-size: 50px;
-  background-color: red;
-  position: relative;
-  z-index: 1;
-}
-
-a {
-  color:white;
-}
-
-#bottomtitle
